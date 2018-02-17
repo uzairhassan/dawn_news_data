@@ -13,7 +13,7 @@ count=0
 count_total = 0
 processed_count=0
 file_count=0
-output_file = "paragraph_classification_data_"+str(file_count)+".json"
+output_file = "/home/uzairh/fypcode/data/paragraph_classification_data_"+str(file_count)+".json"
 for item in data:
     count_total +=1
     if count_total < 0:
@@ -21,11 +21,10 @@ for item in data:
     print str(count_total) + " Processed"
     if processed_count==5:
         with open(output_file, 'w') as outfile:
-            print "Dumping"
-            json.dump('/home/uzairh/fypcode/data/domain_dict', outfile, indent=4)
+            json.dump(domain_dict, outfile, indent=4)
             file_count+=1
             break
-            output_file = "paragraph_classification_data_" + str(file_count) + ".json"
+            output_file = "/home/uzairh/fypcode/data/paragraph_classification_data_" + str(file_count) + ".json"
             del(domain_dict[:])
             processed_count=0
     url = item['expanded_url']
