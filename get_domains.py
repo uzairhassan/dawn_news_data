@@ -66,7 +66,9 @@ for item in data:
                                 elif details.name is None:
                                     # print 'Detail was None'
                                     # print details
+                                    details = details.encode('utf-8')
                                     final_string += details + " "
+                                    final_string = final_string.encode('utf-8')
 
                                     # print 'printing final string'
             if final_string != "":
