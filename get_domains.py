@@ -3,6 +3,10 @@ import urllib
 from bs4 import BeautifulSoup
 import  json
 import  time
+import sys
+
+reload(sys)  
+sys.setdefaultencoding('utf8')
 
 data = None
 domain_dict=[]
