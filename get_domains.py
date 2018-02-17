@@ -68,7 +68,6 @@ for item in data:
                                     # print details
                                     details = details.encode('utf-8')
                                     final_string += details + " "
-                                    final_string = final_string.encode('utf-8')
 
                                     # print 'printing final string'
             if final_string != "":
