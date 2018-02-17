@@ -21,6 +21,7 @@ for item in data:
     print str(count_total) + " Processed"
     if processed_count==5:
         with open(output_file, 'w') as outfile:
+            print "Dumping"
             json.dump('/home/uzairh/fypcode/data/domain_dict', outfile, indent=4)
             file_count+=1
             break
