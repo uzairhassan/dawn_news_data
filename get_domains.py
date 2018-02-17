@@ -92,8 +92,5 @@ for item in data:
 
         else:
             continue
-        # except:
-        #     print "unable to open "+url
-        #     continue
 
 print "total tweets "+ str(len(domain_dict))
